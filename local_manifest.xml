@@ -14,7 +14,7 @@
 
   <project name="ParanoidAndroid/android_device_samsung_maguro" path="device/samsung/maguro" remote="github" revision="jellybean" />
   <project name="ParanoidAndroid/android_device_samsung_tuna" path="device/samsung/tuna" remote="github" revision="jellybean" />
-  <project name="CyanogenMod/android_kernel_samsung_tuna" path="kernel/samsung/tuna" remote="github" revision="cm-10.1" />
+  <project name="ParanoidAndroid/android_kernel_samsung_tuna" path="kernel/samsung/tuna" remote="github" revision="cm-10.1" />
   <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="cm-10.1" />
   <project name="TheMuppets/proprietary_vendor_imgtec" path="vendor/imgtec" remote="github" revision="cm-10.1" />
   <project name="TheMuppets/proprietary_vendor_invensense" path="vendor/invensense" remote="github" revision="cm-10.1" />
@@ -58,6 +58,9 @@
   <remove-project name="ParanoidAndroid/android_device_samsung_maguro" />
   <project name="eugenesan/android_device_samsung_maguro" path="device/samsung/maguro" remote="github" revision="jellybean" />
 
+  <remove-project name="ParanoidAndroid/android_kernel_samsung_tuna" />
+  <project name="ParanoidAndroid/android_kernel_samsung_tuna" path="kernel/samsung/tuna" remote="github" revision="staging" />
+
   <remove-project name="ParanoidAndroid/android_frameworks_base" />
   <project name="eugenesan/android_frameworks_base" path="frameworks/base" remote="github" revision="jellybean" />
 
@@ -69,10 +72,10 @@
 
   <remove-project name="ParanoidAndroid/android_packages_apps_Settings" />
   <project name="eugenesan/android_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="jellybean" />
-
+<!--
   <remove-project name="ParanoidAndroid/android_packages_apps_Contacts" />
   <project name="CyanogenMod/android_packages_apps_Contacts" path="packages/apps/Contacts" remote="github" revision="cm-10.1" />
-
+-->
   <remove-project name="platform/packages/apps/SoundRecorder" />
   <project name="CyanogenMod/android_packages_apps_SoundRecorder" path="packages/apps/SoundRecorder" remote="github" revision="cm-10.1" />
 
@@ -80,18 +83,19 @@
   <remove-project name="platform/packages/inputmethods/PinyinIME" />
   <remove-project name="platform/packages/inputmethods/LatinIME" />
   <project name="CyanogenMod/android_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="github" revision="cm-10.1" />
-
-  <remove-project name="platform/bootable/recovery" />
-<!--  <project name="TeamWin/Team-Win-Recovery-Project" path="bootable/recovery" remote="github" revision="twrp2.4" /> -->
-  <project name="eugenesan/Team-Win-Recovery-Project" path="bootable/recovery" remote="github" revision="twrp2.4" />
 <!--
+  <remove-project name="platform/bootable/recovery" />
+  <project name="TeamWin/Team-Win-Recovery-Project" path="bootable/recovery" remote="github" revision="twrp2.4" />
+  <project name="eugenesan/Team-Win-Recovery-Project" path="bootable/recovery" remote="github" revision="twrp2.4" />
   <project name="TeamWin/android_device_lge_mako" path="device/lge/mako_recovery" remote="github" revision="jellybean" />
   <project name="device/lge/mako" path="device/lge/mako_aosp" revision="master" />
 -->
   <remove-project name="ParanoidAndroid/android_external_busybox" />
-<!--  <project name="CyanogenMod/android_external_busybox" path="external/busybox" remote="github" revision="cm-10.1"/> -->
-  <project name="eugenesan/android_external_busybox" path="external/busybox" remote="github" revision="cm-10.1"/>
+<!--
+  <project name="CyanogenMod/android_external_busybox" path="external/busybox" remote="github" revision="cm-10.1"/>
+-->
+  <project name="eugenesan/android_external_busybox" path="external/busybox" remote="github" revision="cm-10.1" />
 
   <remove-project name="platform/external/bluetooth/bluedroid" />
-  <project path="external/bluetooth/bluedroid" name="CyanogenMod/android_external_bluetooth_bluedroid" remote="github" revision="cm-10.1" />
+  <project name="CyanogenMod/android_external_bluetooth_bluedroid" path="external/bluetooth/bluedroid" remote="github" revision="cm-10.1" />
 </manifest>
