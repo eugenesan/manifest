@@ -79,6 +79,9 @@
   <remove-project name="platform/packages/apps/SoundRecorder" />
   <project name="CyanogenMod/android_packages_apps_SoundRecorder" path="packages/apps/SoundRecorder" remote="github" revision="cm-10.1" />
 
+  <remove-project name="platform/packages/apps/Calculator" />
+  <project name="CyanogenMod/android_packages_apps_Calculator" path="packages/apps/Calculator" remote="github" revision="cm-10.1" />
+
   <remove-project name="platform/packages/inputmethods/OpenWnn" />
   <remove-project name="platform/packages/inputmethods/PinyinIME" />
   <remove-project name="platform/packages/inputmethods/LatinIME" />
