@@ -3,14 +3,16 @@
   <project name="ParanoidAndroid/android_device_lge_mako" path="device/lge/mako" remote="github" revision="jellybean" />
   <project name="ParanoidAndroid/proprietary_vendor_lge" path="vendor/lge" remote="github" revision="jellybean" />
   <project name="ParanoidAndroid/lge-kernel-mako" path="kernel/lge/mako" remote="github" revision="jellybean" />
-  <project name="ParanoidAndroid/android_hardware_qcom_display" path="hardware/qcom/display" remote="github" revision="jellybean" />
-  <project name="platform/hardware/qcom/audio" path="hardware/qcom/audio" remote="aosp" revision="master" />
-  <project name="platform/hardware/qcom/bt" path="hardware/qcom/bt" remote="aosp" revision="master" />
-  <project name="platform/hardware/qcom/camera" path="hardware/qcom/camera" remote="aosp" revision="master" />
-  <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" remote="aosp" revision="master" />
-  <project name="platform/hardware/qcom/media" path="hardware/qcom/media" remote="aosp" revision="master" />
-  <project name="platform/hardware/qcom/power" path="hardware/qcom/power" remote="aosp" revision="master" />
-  <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" remote="aosp" revision="master" />
+  <project name="platform/hardware/qcom/audio" path="hardware/qcom/audio" />
+  <project name="platform/hardware/qcom/bt" path="hardware/qcom/bt" />
+  <project name="platform/hardware/qcom/camera" path="hardware/qcom/camera" />
+  <project name="platform/hardware/qcom/display" path="hardware/qcom/display" />
+  <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" />
+  <project name="platform/hardware/qcom/media" path="hardware/qcom/media" />
+  <project name="platform/hardware/qcom/power" path="hardware/qcom/power" />
+  <project name="platform/hardware/qcom/keymaster" path="hardware/qcom/keymaster" />
+  <project name="platform/hardware/qcom/sensors" path="hardware/qcom/sensors" />
+  <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" />
 
   <project name="ParanoidAndroid/android_device_samsung_maguro" path="device/samsung/maguro" remote="github" revision="jellybean" />
   <project name="ParanoidAndroid/android_device_samsung_tuna" path="device/samsung/tuna" remote="github" revision="jellybean" />
@@ -35,12 +37,12 @@
   <project name="CyanogenMod/android_external_powertop" path="external/powertop" remote="github" revision="cm-10.1" />
   <project name="CyanogenMod/android_external_vim" path="external/vim" remote="github" revision="cm-10.1" />
   <project name="CyanogenMod/android_packages_apps_DSPManager" path="packages/apps/DSPManager" remote="github" revision="177d90019c16cb53a5944d92687f7aa79aaf5677" />
-<!--
+
   <remove-project name="ParanoidAndroid/android_build" />
   <project name="eugenesan/android_build" path="build" remote="github" revision="jellybean">
     <copyfile dest="Makefile" src="core/root.mk" />
   </project>
--->
+
   <remove-project name="ParanoidAndroid/paranoid" />
   <project name="eugenesan/paranoid" path="paranoid" remote="github" revision="jellybean">
     <copyfile dest="rom-build.sh" src="build.sh" />
@@ -96,12 +98,13 @@
   <project name="TeamWin/android_device_lge_mako" path="device/lge/mako_recovery" remote="github" revision="jellybean" />
   <project name="device/lge/mako" path="device/lge/mako_aosp" revision="master" />
 -->
-  <remove-project name="ParanoidAndroid/android_external_busybox" />
 <!--
+  <remove-project name="ParanoidAndroid/android_external_busybox" />
   <project name="CyanogenMod/android_external_busybox" path="external/busybox" remote="github" revision="cm-10.1"/>
--->
   <project name="eugenesan/android_external_busybox" path="external/busybox" remote="github" revision="cm-10.1" />
-
+-->
+<!--
   <remove-project name="platform/external/bluetooth/bluedroid" />
   <project name="CyanogenMod/android_external_bluetooth_bluedroid" path="external/bluetooth/bluedroid" remote="github" revision="cm-10.1" />
+-->
 </manifest>
